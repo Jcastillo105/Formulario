@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+
+    <h1>Formulario</h1>
+
+    <h2>RadioButtons</h2>
+    <input type="radio" id="html" name="fav_language" value="HTML">
+    <label for="html">HTML</label><br>
+    <input type="radio" id="css" name="fav_language" value="CSS">
+    <label for="css">CSS</label><br>
+    <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+    <label for="javascript">JavaScript</label>
+
+    <h2>ComboBox</h2>
+
+    <label for="opciones">Opciones:</label>
+    <select id="opciones" name="opciones">
+        <option value="opcion1">Opción 1</option>
+        <option value="opcion2">Opción 2</option>
+        <option value="opcion3">Opción 3</option>
+        <option value="opcion4">Opción 4</option>
+    </select>
+
+    <h2>checkbox</h2>
+    <input type="checkbox" name="user" id="userbox">
+    <label for="userbox">mario</label>
+
+    <h2>ListBox</h2>
+
+    <label for="cars">Choose a car:</label>
+
+    <select name="cars" id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+    </select>
+
+    <h2>TextArea</h2>
+
+    <textarea name="texto" id="text" cols="30" rows="10"></textarea>
+
+    <h2>Label(etiquetas)</h2>
+
+    <label for="label1">Esto es una etiqueta</label>
+
+    <h2>Command button</h2>
+
+    <button type="button" onclick="alert('¡Botón presionado!')">Haz clic aquí</button>
+
+    <h2>Ejemplo de Botón de Imagen</h2>
+    <form action="/action_page" method="get">
+        <input type="image" src="https://via.placeholder.com/150" alt="Botón de Imagen" width="150" height="50">
+
+
+        <h2>Ejemplo de Control de Audio</h2>
+        <audio controls>
+            <source src="tu_archivo_de_audio.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <h2>Date</h2>
+
+        <label for="fecha">Selecciona una fecha:</label>
+        <input type="date" name="fecha" id="fecha">
+
+        <h2>Ejemplo de Control de Video</h2>
+        <video width="320" height="240" controls>
+            <source src="tu_archivo_de_video.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de #######</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Encuesta de #######</h1>
+      <form action="submit.html" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" name="nombre" id="nombre" required />
+
+        <div class="radio-group">
+          <label for="genero">Genero:</label>
+          <label
+            ><input
+              type="radio"
+              name="genero"
+              id="masculino"
+              required
+            />Masculino</label
+          >
+          <label
+            ><input type="radio" name="genero" id="femenino" />Femenino</label
+          >
+          <label><input type="radio" name="genero" id="otro" />Otro</label>
+        </div>
+
+        <label for="municipio">Municipio:</label>
+        <select name="municipio" id="municipio" required>
+          <option value="vacio">--seleccionar--</option>
+          <option value="distrito_nacional">Distrito Nacional</option>
+          <option value="azua">Azua</option>
+          <option value="bahoruco">Bahoruco</option>
+          <option value="barahona">Barahona</option>
+          <option value="dajabon">Dajabón</option>
+          <option value="duarte">Duarte</option>
+          <option value="elias_pina">Elías Piña</option>
+          <option value="el_seibo">El Seibo</option>
+          <option value="espaillat">Espaillat</option>
+          <option value="hato_mayor">Hato Mayor</option>
+          <option value="hermanas_mirabal">Hermanas Mirabal</option>
+          <option value="independencia">Independencia</option>
+          <option value="la_altagracia">La Altagracia</option>
+          <option value="la_romana">La Romana</option>
+          <option value="la_vega">La Vega</option>
+          <option value="maria_trinidad_sanchez">María Trinidad Sánchez</option>
+          <option value="monte_cristi">Monte Cristi</option>
+          <option value="monte_plata">Monte Plata</option>
+          <option value="pedernales">Pedernales</option>
+          <option value="peravia">Peravia</option>
+          <option value="puerto_plata">Puerto Plata</option>
+          <option value="samana">Samaná</option>
+          <option value="san_cristobal">San Cristóbal</option>
+          <option value="san_juan">San Juan</option>
+          <option value="san_pedro_de_macoris">San Pedro de Macorís</option>
+          <option value="sanchez_ramirez">Sánchez Ramírez</option>
+          <option value="santiago">Santiago</option>
+          <option value="santiago_rodriguez">Santiago Rodríguez</option>
+          <option value="santo_domingo">Santo Domingo</option>
+          <option value="valverde">Valverde</option>
+        </select>
+
+        <label for="edad">Edad:</label>
+        <select name="edad" id="edad">
+          <option value="vacio">--seleccionar--</option>
+          <option value="adolescente">12 a 17 años</option>
+          <option value="adulto">18 a 39 años</option>
+          <option value="adulto_mayor">40 a 65 años</option>
+          <option value="envejeciente">66 años en adelante</option>
+          <option value="norep">Prefiero no responder</option>
+        </select>
+      </form>
+    </div>
+  </body>
+</html>
